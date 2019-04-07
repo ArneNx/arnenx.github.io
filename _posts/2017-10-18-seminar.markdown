@@ -1,0 +1,19 @@
+---
+title:  "Neural Turing Machines and Related"
+date:   2017-02-01 12:20:23
+categories: [machine_learning]
+tags: [machine learning, deep learning]
+---
+
+
+Machine learning techniques and algorithms have become a major building block of modern computer systems. Especially artificial neural networks have experienced a renaissance in the last years. They have proven to outperform traditional models in various disciplines. Among these are classification, image recognition, speech recognition, machine translation and much more. 
+
+![Memory augmented neural network]({{ site.baseurl }}{% link /images/memory_augmentation.png %})
+
+Additionally, it has been proven that recurrent neural networks (RNNs) are in theory equivalent to Turing machines. Therefore, an RNN should in principle be able to express any computable function. However, the theoretical expressiveness does not carry over to the practice. This becomes evident by the fact that basic RNN architectures struggle to learn even very simple algorithms from examples or fail to generalize to longer inputs after being trained on inputs of a limited length. Inspired by this shortcoming of the traditional architectures, there have been several approaches to modify and extend the existing RNN models to reach the full potential the theoretical findings are promising. All these approaches have in common that they provide the network with additional memory or more advanced memory access methods respectively. These so-called memory augmented RNN approaches have been able to learn simple algorithms on many different tasks. For example, the most prominent approach is the neural Turing machine (NTM)  which is able to learn algorithms like copying, sorting and associative recall from input and output examples. This is achieved by extending a neural network with an additional memory with explicit read and write operations. 
+
+
+In this work, the NTM approach, as well as multiple different approaches, will be discussed and compared in the context of practical and theoretical computability. Additionally, their applicability to real-world tasks will be examined for the area of machine translation.
+
+Read the [full report]({{ site.baseurl }}{% link /assets/seminar2017.pdf %}) \\
+See the [presentation slides]({{ site.baseurl }}{% link /assets/slides_seminar2017.pdf %})

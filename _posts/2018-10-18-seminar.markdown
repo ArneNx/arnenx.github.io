@@ -1,0 +1,21 @@
+---
+title:  "Hierarchical Clustering: Objective Functions and Algorithms"
+date:   2018-07-19 16:20:23
+categories: [machine_learning]
+tags: [machine learning, theory]
+---
+
+The goal of hierarchical clustering is to partition a set of datapoints into successively smaller clusters. 
+Compared to centroid-based clustering like e.g. k-means clustering, hierarchical clustering has the key advantage that there is no need to specify the number of clusters in advance. 
+A hierarchical clustering algorithm generates a cluster tree describing the partition steps at each level simultaneously and thus capturing the cluster structure at all levels of granularity, which is another benefit of hierarchical clustering. 
+
+![Hierarchical clustering visualised]({{ site.baseurl }}{% link /images/clustering.png %})
+
+There are several well established algorithms for hierarchical clustering, like e.g. single linkage, average linkage and complete linkage. 
+However, those algorithms are specified procedurally without an underlying objective function. 
+This means in particular that the output, i.e. the cluster tree, produced by such an algorithm is not defined in a precise way. 
+An objective function has the further advantage that it enables a direct comparison of different algorithms in terms of complexity and efficiency. Finally, an objective function is also very useful to incorporate constraints or prior information in the algorithm. 
+
+Read the [full report]({{ site.baseurl }}{% link /assets/seminar2018.pdf %}) \\
+See the [presentation slides]({{ site.baseurl }}{% link /assets/slides_seminar2018.pdf %})
+

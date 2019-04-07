@@ -1,0 +1,19 @@
+---
+title:  "Sequence Generation with Recurrent Neural Networks"
+date:   2016-01-19 15:10:23
+categories: [machine_learning]
+tags: [machine_learining, deep_learning]
+---
+
+Artificial neural networks have experienced a renaissance in the last years. They have proven to outperform traditional models in various disciplines. Among these are classification, image recognition, speech recognition, machine translation and many more.
+Some of these disciplines are different in the sense that they do not have a fixed size in input or output. Such problems that have a vector sequence as input or output can not be solved using standard feed forward neural networks since the number of neurons in the input layer and, therefore, the length of the input is fixed for every model. A solution is possible using recurrent neural networks (RNNs) which introduce cyclic connections in the hidden layers and enable sequence processing. But standard recurrent neural networks do not provide the performance on long-term dependencies they promised when originally introduced. Therefore, it is necessary to use special units like Long Short Term Memory or Gated Recurrent Unit to increase the performance of these systems.
+
+![Seq2Seq Models]({{ site.baseurl }}{% link /images/seq_2_seq.png %})
+
+The problem of sequence generation that will be the main topic of this paper is one of many tasks, for which RNN models show promising results. This problem has numerous practical applications, such as speech synthesis, handwriting generation and machine translation. For all these applications exist similar and even identical RNN models that show very exciting results. One of these models, that was originally introduced for machine translation tasks, is an RNN-encoder and decoder model, which tries to solve the problem of sequence to sequence generation as a special case of sequence generation.
+
+In this work, we chose conversation modeling to further explore the capabilities of generative models. Conversation modeling presents a very difficult task since the input as well as the output are sequences. Additionally, conversations mostly consist of more than one turn. It is therefore necessary to introduce long-term dependencies in order to model the response with respect to the whole context of the previous conversation. However, if models are able to successfully predict conversation utterances, this would be a great step in understanding natural language. That would imply, that the model is capable of extracting the semantic meaning of a long-range context and generate a fitting response.
+
+
+Read the [full report]({{ site.baseurl }}{% link /assets/seminar2016.pdf %}) \\
+See the [presentation slides]({{ site.baseurl }}{% link /assets/slides_seminar2016.pdf %})
